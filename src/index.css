@@ -1,68 +1,154 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
+@layer base {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    --background: 0 0% 100%;
+    --foreground: 230 50% 10%;
+
+    --card: 225 20% 97%;
+    --card-foreground: 230 50% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 230 50% 10%;
+
+    --primary: 228 100% 56%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 236 100% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 225 20% 95%;
+    --muted-foreground: 225 10% 45%;
+
+    --accent: 228 100% 96%;
+    --accent-foreground: 228 100% 40%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 225 15% 90%;
+    --input: 225 15% 90%;
+    --ring: 228 100% 56%;
+
+    --radius: 0.75rem;
+
+    --gradient-primary: linear-gradient(135deg, hsl(228 100% 56%), hsl(236 100% 20%));
+    --gradient-subtle: linear-gradient(135deg, hsl(228 100% 97%), hsl(236 100% 97%));
+    --gradient-hero: linear-gradient(160deg, hsl(0 0% 100%) 0%, hsl(228 100% 97%) 50%, hsl(236 60% 95%) 100%);
+    --shadow-card: 0 4px 24px -4px hsl(228 100% 56% / 0.08);
+    --shadow-card-hover: 0 8px 32px -4px hsl(228 100% 56% / 0.15);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 228 100% 56%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 228 100% 96%;
+    --sidebar-accent-foreground: 228 100% 40%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 228 100% 56%;
   }
-  a:hover {
-    color: #747bff;
+
+  .dark {
+    --background: 230 25% 6%;
+    --foreground: 210 40% 96%;
+
+    --card: 230 20% 10%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 230 20% 10%;
+    --popover-foreground: 210 40% 96%;
+
+    --primary: 228 100% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 228 80% 30%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 230 15% 15%;
+    --muted-foreground: 225 10% 55%;
+
+    --accent: 228 40% 15%;
+    --accent-foreground: 228 100% 70%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 230 15% 18%;
+    --input: 230 15% 18%;
+    --ring: 228 100% 60%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(228 100% 60%), hsl(236 80% 40%));
+    --gradient-subtle: linear-gradient(135deg, hsl(230 25% 8%), hsl(236 20% 10%));
+    --gradient-hero: linear-gradient(160deg, hsl(230 25% 6%) 0%, hsl(228 30% 10%) 50%, hsl(236 25% 8%) 100%);
+    --shadow-card: 0 4px 24px -4px hsl(228 100% 60% / 0.1);
+    --shadow-card-hover: 0 8px 32px -4px hsl(228 100% 60% / 0.2);
+
+    --sidebar-background: 230 25% 8%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 228 100% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 228 40% 15%;
+    --sidebar-accent-foreground: 228 100% 70%;
+    --sidebar-border: 230 15% 18%;
+    --sidebar-ring: 228 100% 60%;
   }
-  button {
-    background-color: #f9f9f9;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .gradient-bg {
+    background-image: var(--gradient-primary);
+  }
+
+  .gradient-subtle-bg {
+    background-image: var(--gradient-subtle);
+  }
+
+  .hero-gradient {
+    background-image: var(--gradient-hero);
+  }
+
+  .card-shadow {
+    box-shadow: var(--shadow-card);
+  }
+
+  .card-shadow-hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
 }
