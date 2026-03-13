@@ -33,11 +33,11 @@ const Navbar = () => {
     >
       <div className="section-container flex items-center justify-between h-16 md:h-20">
         <a href="#" className="text-xl font-bold tracking-tight text-foreground">
-          Kanjo<span className="gradient-text">.dev</span>
+          Alchemy<span className="gradient-text">.Codes</span>
         </a>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-1">
+        <div className="hidden md:flex items-center gap-1 flex-1 justify-center">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -47,6 +47,9 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
+        </div>
+
+        <div className="hidden md:flex items-center gap-2">
           <button
             onClick={toggleTheme}
             className="p-2 text-muted-foreground hover:text-foreground transition-colors rounded-md hover:bg-accent"
@@ -54,10 +57,11 @@ const Navbar = () => {
           >
             {theme === "light" ? <Moon size={18} /> : <Sun size={18} />}
           </button>
-          <Button variant="hero" size="sm" className="ml-1" asChild>
+          <Button variant="hero" size="sm" asChild>
             <a href="#contact">Hire Me</a>
           </Button>
         </div>
+
         {/* Mobile toggle */}
         <button
           onClick={() => setIsMobileOpen(!isMobileOpen)}

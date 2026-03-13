@@ -20,9 +20,9 @@ const ContactSection = () => {
   };
 
   const socials = [
-    { icon: Linkedin, label: "LinkedIn", href: "#" },
-    { icon: Github, label: "GitHub", href: "#" },
-    { icon: Mail, label: "Email", href: "mailto:contact@example.com" },
+    { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/kanjo-elkamira-ndi-a767b7229" },
+    { icon: Github, label: "GitHub", href: "https://github.com/Kanjo-Elkamira-Ndi/Kanjo-Elkamira-Ndi" },
+    { icon: Mail, label: "Email", href: "mailto:kanjoelkamira@gmail.com" },
   ];
 
   return (
