@@ -4,10 +4,14 @@ import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 
 const TITLES = [
+  "Hey There 👋",
+  "I am.",
+  "Kanjo Elkamira Ndi",
+  "And I am a............",
   "Software Engineer",
   "Fullstack Developer",
   "QA Engineer",
-  "Aspiring DevSecOps Practitioner",
+  "Aspiring DevSecOps Engineer",
 ];
 
 const TypewriterTitle = () => {
