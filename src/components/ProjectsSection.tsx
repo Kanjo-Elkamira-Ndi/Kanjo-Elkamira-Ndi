@@ -75,6 +75,17 @@ const projects = [
     detailsUrl: "#",
     images: makePlaceholders("web", 3),
   },
+    {
+    title: "Real Time Chat App",
+    category: "web",
+    description:
+      "A real-time chat application built with React and Tailwind CSS on the frontend, Node.js/Express on the backend, and Socket.IO for instant messaging, featuring JWT-based authentication.",
+    tech: ["React", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Socket.IO"],
+    status: "Completed",
+    visitUrl: "#",
+    detailsUrl: "#",
+    images: makePlaceholders("web", 3),
+  },
   {
     title: "Shayo – Food Delivery & Social Discovery",
     category: "mobile",
