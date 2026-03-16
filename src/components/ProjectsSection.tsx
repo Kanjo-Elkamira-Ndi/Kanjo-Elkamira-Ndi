@@ -5,6 +5,10 @@ import {
   BookOpen, Globe, Smartphone, Zap, Brain, Layers, LayoutGrid,
 } from "lucide-react";
 
+import images from "../../images";
+
+
+
 // ─── Data ────────────────────────────────────────────────────────────────────
 
 const CATEGORIES = [
@@ -53,7 +57,12 @@ const projects = [
     status: "Completed",
     visitUrl: "#",
     detailsUrl: "#",
-    images: makePlaceholders("web", 4),
+    images: [
+      { src: images.digimark_web_screenshot_1, alt: "DigiMark website homepage" },
+      { src: images.digimark_web_screenshot_2, alt: "DigiMark website services" },
+      { src: images.digimark_web_screenshot_3, alt: "DigiMark website projects" },
+      { src: images.digimark_web_screenshot_4, alt: "DigiMark website services page" },
+    ],
   },
   {
     title: "MenTor School Management System",
