@@ -73,7 +73,19 @@ const projects = [
     status: "Completed",
     visitUrl: "#",
     detailsUrl: "#",
-    images: makePlaceholders("web", 3),
+    images: [
+      { src: images.mentor_screenshot_1, alt: "Mentor Landing Page" },
+      { src: images.mentor_screenshot_2, alt: "Mentor Login Page" },
+      { src: images.mentor_screenshot_3, alt: "Mentor Admin Dashbaord Index" },
+      { src: images.mentor_screenshot_4, alt: "Mentor Admin Dashboard" },
+      { src: images.mentor_screenshot_5, alt: "Mentor Admin Course Management" },
+      { src: images.mentor_screenshot_6, alt: "Mentor Admin School of Study Management" },
+      { src: images.mentor_screenshot_7, alt: "Mentor Admin Transcript Management" },
+      { src: images.mentor_screenshot_8, alt: "Mentor Student Dashboard" },
+      { src: images.mentor_screenshot_9, alt: "Mentor Student Courses" },
+      { src: images.mentor_screenshot_10, alt: "Mentor Student Ca Marks" },
+      { src: images.mentor_screenshot_11, alt: "Mentor Student Profile Page" },
+    ]
   },
     {
     title: "Real Time Chat App",
