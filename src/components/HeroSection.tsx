@@ -4,14 +4,11 @@ import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 
 const TITLES = [
-  "Hey There 👋",
-  "I am.",
-  "Kanjo Elkamira Ndi",
-  "And I am a............",
-  "Software Engineer",
-  "Fullstack Developer",
-  "QA Engineer",
-  "Aspiring DevSecOps Engineer",
+  "Fullstack Software Engineer",
+  "React · Node.js · TypeScript",
+  "Building for real users.",
+  "Based in Cameroon.",
+  "Open to remote opportunities.",
 ];
 
 const TypewriterTitle = () => {
@@ -154,9 +151,9 @@ const HeroSection = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed"
             >
-              I design and develop scalable web systems, mobile applications,
-              AI-driven solutions, and high-quality software while continuously
-              exploring DevSecOps and secure engineering practices.
+             I build fullstack web systems that solve real problems,from agricultural platforms connecting 
+             farmers to buyers, to custom firm management systems, AI-augmented tools and educator-facing software. 
+             I care about clean architecture, practical impact, and shipping things that work.
             </motion.p>
 
             <motion.div
@@ -196,9 +193,9 @@ const HeroSection = () => {
               </div>
               <div className="w-px h-10 bg-border" />
               <div>
-                <span className="block text-2xl font-bold text-foreground">5+</span>
+                <span className="block text-2xl font-bold text-foreground">15+</span>
                 Technologies
-              </div>
+            </div>
             </motion.div>
           </div>
 
