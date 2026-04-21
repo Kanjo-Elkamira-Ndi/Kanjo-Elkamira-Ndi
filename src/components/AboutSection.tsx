@@ -20,7 +20,7 @@ const highlights = [
   },
   {
     icon: Users,
-    label: "Teaching & facilitation",
+    label: "Lecturing & facilitation",
     desc: "Lecture delivery at YIBS and DigiMark bootcamp facilitation — OOP, Query Optimisation, and AI-augmented engineering.",
     tag: "BTech · HND level",
     colors: { bg: "bg-amber-50 dark:bg-amber-950/30", icon: "text-amber-600 dark:text-amber-400", tag: "bg-amber-50 text-amber-700 dark:bg-amber-950/40 dark:text-amber-300" },
@@ -79,12 +79,13 @@ const AboutSection = () => {
                 <span className="font-medium text-foreground">React/Node.js production apps</span> to{" "}
                 <span className="font-medium text-foreground">AI-augmented pipelines</span> and
                 PostgreSQL-backed platforms. I've also co-facilitated professional engineering bootcamps
-                and delivered university-level courses in OOP, Query Optimisation, and Legal Regulations in tech.
+                and delivered university-level courses in Object Oriented Programming in C++, Introduction to Software
+                Engineering, Advanced Data Structures, Practicals in Software Engineering, Query Optimisation, and Legal Regulations in tech.
               </p>
             </div>
 
             <blockquote className="mt-8 border-l-2 border-primary pl-5 text-muted-foreground italic leading-relaxed">
-              I don't just write code — I teach it, document it, and architect it to last.
+              I don't just write code, I teach it, document it, and architect it to last.
               That dual lens of practitioner and educator shapes everything I build.
             </blockquote>
 

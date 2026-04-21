@@ -46,7 +46,11 @@ const projects = [
     status: "Completed",
     visitUrl: "#",
     detailsUrl: "#",
-    images: makePlaceholders("web", 3),
+    images: [
+      { src: images.dims_screenshot_1, alt: "DIMS dashboard showing intern tracking and workflow management features" },
+      { src: images.dims_screenshot_2, alt: "DIMS dashboard showing intern tracking and workflow management features" },
+      { src: images.dims_screenshot_3, alt: "DIMS dashboard showing intern tracking and workflow management features" },
+    ],
   },
   {
     title: "DigiMark Consulting Website",

@@ -13,6 +13,9 @@ import mentor_screenshot_8 from "./mentor_screenshot_8.png";
 import mentor_screenshot_9 from "./mentor_screenshot_9.png";
 import mentor_screenshot_10 from "./mentor_screenshot_10.png";
 import mentor_screenshot_11 from "./mentor_screenshot_11.png";
+import dims_screenshot_1 from "./dims_screenshot_1.png";
+import dims_screenshot_2 from "./dims_screenshot_2.png";
+import dims_screenshot_3 from "./dims_screenshot_3.png";
 
 export default {
   digimark_web_screenshot_1,
@@ -30,4 +33,7 @@ export default {
   mentor_screenshot_9,
   mentor_screenshot_10,
   mentor_screenshot_11,
+  dims_screenshot_1,
+  dims_screenshot_2,
+  dims_screenshot_3,
 };
