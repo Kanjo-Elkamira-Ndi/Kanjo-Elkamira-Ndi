@@ -29,6 +29,10 @@ import shayo_screenshot_10_restoMenus from "./shayo_screenshot_10_restoMenus.png
 import shayo_screenshot_11_restoDetail from "./shayo_screenshot_11_restoDetail.png";
 import shayo_screenshot_12_foodscreen from "./shayo_screenshot_12_foodscreen.png";
 import shayo_screenshot_13_add_to_cart from "./shayo_screenshot_13_add_to_cart.png";
+import real_time_chat_app_screenshot_1 from "./real_time_chat_app_screenshot_1.png";
+import real_time_chat_app_screenshot_2 from "./real_time_chat_app_screenshot_2.png";
+import real_time_chat_app_screenshot_3 from "./real_time_chat_app_screenshot_3.png";
+import real_time_chat_app_screenshot_4 from "./real_time_chat_app_screenshot_4.png";
 
 export default {
   digimark_web_screenshot_1,
@@ -62,4 +66,8 @@ export default {
   shayo_screenshot_11_restoDetail,
   shayo_screenshot_12_foodscreen,
   shayo_screenshot_13_add_to_cart,
+  real_time_chat_app_screenshot_1,
+  real_time_chat_app_screenshot_2,
+  real_time_chat_app_screenshot_3,
+  real_time_chat_app_screenshot_4,
 };

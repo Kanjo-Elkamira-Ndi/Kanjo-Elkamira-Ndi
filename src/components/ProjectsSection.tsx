@@ -100,7 +100,12 @@ const projects = [
     status: "Completed",
     visitUrl: "#",
     detailsUrl: "#",
-    images: makePlaceholders("web", 3),
+    images: [
+      { src: images.real_time_chat_app_screenshot_1, alt: "Real Time Chat App - Login Screen" },
+      { src: images.real_time_chat_app_screenshot_2, alt: "Real Time Chat App - Home Screen" },
+      { src: images.real_time_chat_app_screenshot_3, alt: "Real Time Chat App - 1st Chat Screen" },
+      { src: images.real_time_chat_app_screenshot_4, alt: "Real Time Chat App - 2nd Chat Screen" },
+    ],
   },
   {
     title: "Shayo – Food Delivery & Social Discovery",
