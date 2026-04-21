@@ -111,7 +111,21 @@ const projects = [
     status: "In Development",
     visitUrl: "#",
     detailsUrl: "#",
-    images: makePlaceholders("mobile", 4),
+    images: [
+      { src: images.shayo_screenshot_1_onboarding_1, alt: "Shayo app first onboarding screen with brief introduction" },
+      { src: images.shayo_screenshot_2_onboarding_2, alt: "Shayo app second onboarding screen with brief introduction" },
+      { src: images.shayo_screenshot_3_onboarding_3, alt: "Shayo app third onboarding screen with brief introduction" },
+      { src: images.shayo_screenshot_3_onboarding_4, alt: "Shayo app fourth onboarding screen with brief introduction" },
+      { src: images.shayo_screenshot_5_login, alt: "Shayo app login screen" },
+      { src: images.shayo_screenshot_6_verification, alt: "Shayo app verification screen" },
+      { src: images.shayo_screenshot_7_signup, alt: "Shayo app signup screen" },
+      { src: images.shayo_screenshot_8_location, alt: "Shayo app location screen" },
+      { src: images.shayo_screenshot_9_home, alt: "Shayo app home screen" },
+      { src: images.shayo_screenshot_10_restoMenus, alt: "Shayo app restaurant menu screen" },
+      { src: images.shayo_screenshot_11_restoDetail, alt: "Shayo app restaurant detail screen" },
+      { src: images.shayo_screenshot_12_foodscreen, alt: "Shayo app food detail screen" },
+      { src: images.shayo_screenshot_13_add_to_cart, alt: "Shayo app cart screen" },
+    ],
   },
   {
     title: "Revive – AI Social Companion Platform",
@@ -209,7 +223,7 @@ const Lightbox = ({ images, startIndex, category, onClose }) => {
         animate={{ scale: 1, opacity: 1 }}
         exit={{ scale: 0.92, opacity: 0 }}
         transition={{ type: "spring", stiffness: 280, damping: 22 }}
-        className="relative w-full max-w-3xl aspect-video rounded-2xl overflow-hidden bg-zinc-900 shadow-2xl"
+        className={`relative w-full max-w-3xl rounded-2xl overflow-hidden bg-zinc-900 shadow-2xl ${category === "mobile" ? "aspect-[9/16] max-w-[280px]" : "aspect-video"}`}
         onClick={(e) => e.stopPropagation()}
       >
         <AnimatePresence mode="wait">
@@ -219,10 +233,10 @@ const Lightbox = ({ images, startIndex, category, onClose }) => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -40 }}
             transition={{ duration: 0.22 }}
-            className="absolute inset-0"
+            className={`absolute inset-0 flex items-center justify-center ${category === "mobile" ? "py-8" : ""}`}
           >
             {images[current].src ? (
-              <img src={images[current].src} alt={images[current].alt} className="w-full h-full object-cover" />
+              <img src={images[current].src} alt={images[current].alt} className={`w-full h-full object-cover ${category === "mobile" ? "object-contain" : "object-cover"}`} />
             ) : (
               <PlaceholderThumb category={category} index={current} />
             )}
@@ -355,6 +369,170 @@ const CategoryBadge = ({ category }) => {
     <span className={`text-xs font-semibold px-2.5 py-1 rounded-full border uppercase tracking-wide ${colors[category] ?? "bg-accent text-accent-foreground border-border"}`}>
       {category}
     </span>
+  );
+};
+
+//Phone Frame For Mobile View Display
+const PhoneFrame = ({ image, isActive, onClick }) => (
+  <motion.div
+    onClick={onClick}
+    whileHover={{ y: -6, scale: 1.03 }}
+    transition={{ type: "spring", stiffness: 300, damping: 20 }}
+    className={`relative flex-shrink-0 cursor-pointer ${isActive ? "z-10" : "z-0"}`}
+  >
+    {/* Phone shell */}
+    <div className="relative w-[90px] h-[185px] rounded-[18px] bg-zinc-900 border-2 border-zinc-700 shadow-xl overflow-hidden">
+      {/* Notch */}
+      <div className="absolute top-2 left-1/2 -translate-x-1/2 w-10 h-2 bg-zinc-800 rounded-full z-10" />
+      {/* Screen */}
+      <div className="absolute inset-[3px] rounded-[15px] overflow-hidden bg-zinc-800">
+        {image.src ? (
+          <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
+        ) : (
+          <div className="w-full h-full bg-gradient-to-b from-violet-900 to-purple-800 flex items-center justify-center">
+            <Smartphone size={20} className="text-white/30" />
+          </div>
+        )}
+      </div>
+      {/* Screen glare */}
+      <div className="absolute inset-0 rounded-[18px] bg-gradient-to-br from-white/10 to-transparent pointer-events-none" />
+    </div>
+    {/* Active glow */}
+    {isActive && (
+      <div className="absolute -inset-1 rounded-[20px] bg-violet-500/20 blur-md -z-10" />
+    )}
+  </motion.div>
+);
+
+const MobileAppCard = ({ project, index, inView }) => {
+  const [lightbox, setLightbox] = useState(null);
+  const [scrollIndex, setScrollIndex] = useState(0);
+  const visibleCount = 4;
+  const maxScroll = project.images.length - visibleCount;
+
+  return (
+    <>
+      <motion.div
+        initial={{ opacity: 0, y: 24 }}
+        animate={inView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.45, delay: index * 0.07, ease: [0.22, 1, 0.36, 1] }}
+        className="group relative flex flex-col bg-card border border-violet-500/20 rounded-2xl overflow-hidden hover:border-violet-400/40 hover:shadow-xl hover:shadow-violet-500/10 transition-all duration-300 col-span-1 md:col-span-2"
+      >
+        {/* Top accent */}
+        <div className="h-0.5 w-full bg-gradient-to-r from-violet-500 to-purple-400" />
+
+        <div className="p-5 flex flex-col gap-4 flex-1">
+          {/* Phone gallery row */}
+          <div className="relative">
+            <div className="flex items-end justify-center gap-2 h-[210px] overflow-hidden px-2">
+              {project.images.slice(scrollIndex, scrollIndex + visibleCount).map((img, i) => (
+                <PhoneFrame
+                  key={scrollIndex + i}
+                  image={img}
+                  isActive={i === 1}
+                  onClick={() => setLightbox(scrollIndex + i)}
+                />
+              ))}
+            </div>
+
+            {/* Scroll controls */}
+            <div className="flex items-center justify-center gap-2 mt-3">
+              <button
+                onClick={() => setScrollIndex((s) => Math.max(0, s - 1))}
+                disabled={scrollIndex === 0}
+                className="w-6 h-6 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-primary/40 disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+              >
+                <ChevronLeft size={13} />
+              </button>
+
+              {/* Dot indicators */}
+              <div className="flex gap-1">
+                {project.images.map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setScrollIndex(Math.min(i, maxScroll < 0 ? 0 : maxScroll))}
+                    className={`rounded-full transition-all duration-200 ${
+                      i >= scrollIndex && i < scrollIndex + visibleCount
+                        ? "w-4 h-1.5 bg-violet-400"
+                        : "w-1.5 h-1.5 bg-border"
+                    }`}
+                  />
+                ))}
+              </div>
+
+              <button
+                onClick={() => setScrollIndex((s) => Math.min(maxScroll < 0 ? 0 : maxScroll, s + 1))}
+                disabled={scrollIndex >= maxScroll}
+                className="w-6 h-6 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-primary/40 disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+              >
+                <ChevronRight size={13} />
+              </button>
+            </div>
+          </div>
+
+          {/* Meta + content — two column on wider screens */}
+          <div className="grid sm:grid-cols-2 gap-4">
+            <div className="flex flex-col gap-3">
+              <div className="flex items-center gap-2 flex-wrap">
+                <CategoryBadge category={project.category} />
+                <span className="text-xs font-medium px-2.5 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">
+                  {project.status}
+                </span>
+              </div>
+              <h3 className="text-base font-semibold text-foreground leading-snug group-hover:text-primary transition-colors">
+                {project.title}
+              </h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                {project.description}
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-3 justify-between">
+              <div>
+                <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Tech Stack</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {project.tech.map((t) => (
+                    <span key={t} className="px-2 py-0.5 text-xs font-mono rounded-md bg-muted text-muted-foreground border border-border/50">
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="flex gap-2 pt-1">
+                <a
+                  href={project.visitUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:opacity-90 active:scale-95 transition-all duration-150"
+                >
+                  <ExternalLink size={13} />
+                  Visit
+                </a>
+                <a
+                  href={project.detailsUrl}
+                  className="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg border border-border bg-accent text-accent-foreground text-sm font-medium hover:border-violet-400/40 hover:text-violet-400 active:scale-95 transition-all duration-150"
+                >
+                  <BookOpen size={13} />
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+
+      <AnimatePresence>
+        {lightbox !== null && (
+          <Lightbox
+            images={project.images}
+            startIndex={lightbox}
+            category={project.category}
+            onClose={() => setLightbox(null)}
+          />
+        )}
+      </AnimatePresence>
+    </>
   );
 };
 
@@ -516,9 +694,9 @@ const ProjectsSection = () => {
             transition={{ duration: 0.2 }}
             className="grid md:grid-cols-2 xl:grid-cols-3 gap-6"
           >
-            {filtered.map((project, i) => (
-              <ProjectCard key={project.title} project={project} index={i} inView={isInView} />
-            ))}
+          {filtered.map((project, i) => (
+            <ProjectCard key={project.title} project={project} index={i} inView={isInView} />
+          ))}
           </motion.div>
         </AnimatePresence>
 

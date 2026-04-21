@@ -132,7 +132,20 @@ const logos = {
     </svg>
   ),
   // Tools
-  "Git/Github": (
+  Git: (
+    <svg viewBox="0 0 300 300" fill="none" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="300" height="300" rx="50" fill="#F05033"/>
+        <line x1="62" y1="238" x2="150" y2="150" stroke="white" strokeWidth="20" strokeLinecap="round"/>
+        <line x1="150" y1="150" x2="238" y2="62" stroke="white" strokeWidth="20" strokeLinecap="round"/>
+        <line x1="150" y1="150" x2="238" y2="150" stroke="white" strokeWidth="20" strokeLinecap="round"/>
+        <line x1="238" y1="150" x2="238" y2="238" stroke="white" strokeWidth="20" strokeLinecap="round"/>
+        <circle cx="62" cy="238" r="22" fill="white"/>
+        <circle cx="150" cy="150" r="22" fill="white"/>
+        <circle cx="238" cy="62" r="22" fill="white"/>
+        <circle cx="238" cy="238" r="22" fill="white"/>
+      </svg>
+  ),
+  GitHub: (
     <svg viewBox="0 0 32 32" fill="none" className="w-full h-full">
       <path d="M16 3C8.8 3 3 8.8 3 16c0 5.8 3.8 10.8 9 12.5.7.1.9-.3.9-.6v-2.2c-3.7.8-4.5-1.8-4.5-1.8-.6-1.6-1.5-2-1.5-2-1.2-.8.1-.8.1-.8 1.4.1 2.1 1.4 2.1 1.4 1.2 2.1 3.2 1.5 4 1.1.1-.9.5-1.5.9-1.8-3-.3-6.1-1.5-6.1-6.6 0-1.5.5-2.7 1.3-3.6-.1-.3-.6-1.7.1-3.5 0 0 1.1-.4 3.7 1.4 1.1-.3 2.2-.4 3.3-.4s2.2.1 3.3.4c2.6-1.8 3.7-1.4 3.7-1.4.7 1.8.3 3.2.1 3.5.8.9 1.3 2.1 1.3 3.6 0 5.1-3.1 6.3-6.1 6.6.5.4.9 1.2.9 2.4v3.6c0 .3.2.7.9.6C25.2 26.8 29 21.8 29 16 29 8.8 23.2 3 16 3z" fill="currentColor" className="text-foreground"/>
     </svg>
@@ -180,15 +193,12 @@ const logos = {
 </svg>
   ),
   Postman: (
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-  <circle cx="128" cy="128" r="120" fill="#FF6C37"/>
-  
-  <g fill="#FFF">
-    <path d="M188.5 52.4c-8.2-8.2-21.4-8.2-29.6 0l-17.7 17.7 29.6 29.6 17.7-17.7c8.1-8.2 8.1-21.4 0-29.6z"/>
-    <path d="M174.3 102.7l-43-43-15.3 15.3c-2.3-2.3-6.1-2.3-8.4 0l-54.3 54.3c-2.3 2.3-2.3 6.1 0 8.4l11 11c2.3 2.3 6.1 2.3 8.4 0l11.7-11.7 4.1 4.1-13.7 13.7c-2.3 2.3-2.3 6.1 0 8.4l26.2 26.2c2.3 2.3 6.1 2.3 8.4 0 37.5-18.8 53-33.8 66.5-47.3 2.3-2.3 2.3-6.1 0-8.4l-1.6-1.6z"/>
-    <path d="M125.7 131.5l-48.2 48.2 8.1 8.1 51.1-44.8c3.3-2.8 3.5-7.8.7-11.1-1.3-1.6-3.2-2.5-5.2-2.5l-6.5 2.1z"/>
-  </g>
-</svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" className="w-full h-full">
+      <circle cx="128" cy="128" r="128" fill="#FF6C37"/>
+      <path d="M196 60c-9.4-9.4-24.6-9.4-34 0l-18 18 34 34 18-18c9.3-9.4 9.3-24.7 0-34z" fill="white"/>
+      <path d="M180 115l-39-39-90 90c-2 2-2 5.2 0 7.2l31 31c2 2 5.2 2 7.2 0l90-90z" fill="white"/>
+      <line x1="84" y1="185" x2="72" y2="197" stroke="white" strokeWidth="8" strokeLinecap="round"/>
+    </svg>
   ),
   LLMs: (
     <svg viewBox="0 0 32 32" fill="none" className="w-full h-full">
@@ -207,11 +217,27 @@ const logos = {
     </svg>
   ),
   Kubernetes: (
-    <svg viewBox="0 0 32 32" fill="none" className="w-full h-full">
-      <path d="M16 3l-12 6.5v13L16 29l12-6.5v-13L16 3z" fill="#326CE5"/>
-      <path d="M16 8v16M10 11l12 10M22 11L10 21" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
-      <circle cx="16" cy="16" r="2" fill="white"/>
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" className="w-full h-full">
+        <rect width="80" height="80" rx="12" fill="#326CE5"/>
+        <circle cx="40" cy="40" r="22" fill="none" stroke="white" strokeWidth="3"/>
+        <circle cx="40" cy="40" r="5" fill="white"/>
+        <line x1="40" y1="18" x2="40" y2="29" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
+        <line x1="40" y1="51" x2="40" y2="62" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
+        <line x1="18" y1="40" x2="29" y2="40" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
+        <line x1="51" y1="40" x2="62" y2="40" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
+        <line x1="24" y1="24" x2="32" y2="32" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
+        <line x1="48" y1="48" x2="56" y2="56" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
+        <line x1="56" y1="24" x2="48" y2="32" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
+        <line x1="24" y1="56" x2="32" y2="48" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
+        <circle cx="40" cy="18" r="4" fill="white"/>
+        <circle cx="40" cy="62" r="4" fill="white"/>
+        <circle cx="18" cy="40" r="4" fill="white"/>
+        <circle cx="62" cy="40" r="4" fill="white"/>
+        <circle cx="24" cy="24" r="4" fill="white"/>
+        <circle cx="56" cy="56" r="4" fill="white"/>
+        <circle cx="56" cy="24" r="4" fill="white"/>
+        <circle cx="24" cy="56" r="4" fill="white"/>
+      </svg>
   ),
 };
 
@@ -248,7 +274,8 @@ const SKILLS = [
   { name: "PostgreSQL",     category: "database", color: "from-blue-700 to-blue-500" },
   { name: "MongoDB",        category: "database", color: "from-green-600 to-emerald-400" },
   // Tools
-  { name: "Git/Github",     category: "tools",    color: "from-zinc-600 to-zinc-400" },
+  { name: "Git",           category: "tools",    color: "from-orange-600 to-orange-400" },
+  { name: "GitHub",        category: "tools",    color: "from-zinc-700 to-zinc-500" },
   { name: "Apache JMeter",  category: "tools",    color: "from-red-600 to-red-400" },
   { name: "Jest",           category: "tools",    color: "from-rose-700 to-pink-500" },
   { name: "Postman",        category: "tools",    color: "from-orange-500 to-amber-400" },
