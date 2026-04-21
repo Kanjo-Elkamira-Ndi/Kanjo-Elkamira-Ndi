@@ -23,6 +23,18 @@ const experiences = [
     company: "WikiMentor Africa Hackathon, Yaoundé",
     description: "Supervised and coordinated the hackathon team; ensured project completion, mentoring team members on system design and coding best practices.",
   },
+  {
+    role: "Team Lead",
+    company: "FarmerHack 2026 — Rebase Code Camp",
+    description:
+      "Led the development of MoonsuLink, a multi-channel messaging platform connecting Cameroonian farmers with buyers via Telegram and SMS. Architected a Node.js/Express/TypeScript backend, React/Vite/Tailwind admin dashboard, and PostgreSQL database structured as an npm workspaces monorepo.",
+  },
+  {
+  role: "Software & QA Engineer",
+  company: "DigiMark Consulting",
+  description:
+    "Collaborate closely with the lead developer to design and evaluate scalable software architectures, ensuring robust, maintainable systems across all projects. Conduct architecture reviews, enforce engineering best practices, and drive quality standards across the development lifecycle. Actively contribute to the delivery of production-grade software applications and SaaS products.",
+},
 ];
 
 const ExperienceSection = () => {
