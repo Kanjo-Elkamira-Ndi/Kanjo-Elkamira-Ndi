@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Kanjo Elkamira Ndi
 
-💻 **Software Engineer & Full-Stack Developer| Problem Solver | QA Enthusiast | Aspiring DevSecOps Engineer**
+💻 **Full-Stack Software Engineer**
 
 I am a passionate software engineer with over **4 years of experience in software and web application development**, focused on building **scalable systems, intelligent applications, and high-quality software solutions**.
 
@@ -39,35 +39,71 @@ I approach software development with a focus on:
 # 🛠 Tech Stack
 
 ### Programming Languages
-- JavaScript
-- PHP
-- Python
-- Flutter (Dart)
+<p>
+  <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
+  <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" />
+  <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" />
+  <img src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white" />
+</p>
 
-### Web Development
-- Laravel
-- MERN Stack
-- React
-- WordPress
+<!-- Web Development Section -->
+<details open>
+<summary><b>🌐 Full-Stack Web Development</b></summary>
+<br />
+<p align="left">
+  <img src="https://img.shields.io/badge/PERN_Stack-%23000000.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="PERN" />
+  <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
+  <img src="https://img.shields.io/badge/WordPress-%2321759B.svg?style=for-the-badge&logo=WordPress&logoColor=white" alt="WordPress" />
+  <img src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white" alt="Flutter" />
+</p>
+</details>
 
-### AI / Data
-- Machine Learning
-- Neural Networks
-- Data Analysis
-- Predictive Modeling
+<!-- AI & Data Science Section -->
+<details open>
+<summary><b>🧠 AI, Machine Learning & Data Science</b></summary>
+<br />
+<p align="left">
+  <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />
+  <img src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="ML" />
+  <img src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white" alt="Neural Networks" />
+  <img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="Data Analysis" />
+  <img src="https://img.shields.io/badge/NumPy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white" alt="Predictive Modeling" />
+</p>
+</details>
 
-### Databases
-- MySQL
-- PostgreSQL
-- MongoDB
+<!-- Database Section -->
+<details open>
+<summary><b>🗄️ Database Management</b></summary>
+<br />
+<p align="left">
+  <img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+</p>
+</details>
 
-### Tools & Technologies
-- Git
-- Linux
-- REST APIs
-- Docker (Learning)
-- CI/CD (Exploring)
+<!-- Tools & DevOps Section -->
+<details open>
+<summary><b>⚙️ Tools & Infrastructure</b></summary>
+<br />
+<p align="left">
+  <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman" />
+  <img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Nodemon-76D04B?style=for-the-badge&logo=nodemon&logoColor=white" alt="Nodemon" />
+</p>
+</details>
 
+---
+
+### 🔭 Current Focus
+- 🚀 Deepening my expertise in the **PERN Stack** (PostgreSQL, Express, React, Node.js).
+- 🤖 Exploring **Predictive Modeling** and **Neural Network** architectures.
+- 🐳 Integrating **Docker** and **CI/CD** pipelines into my development workflow.
 ---
 
 # 🔬 Areas of Interest
