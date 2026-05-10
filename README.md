@@ -136,10 +136,9 @@ Tech: Python, Computer Vision, Machine Learning
 ---
 
 # 📈 GitHub Stats
+![GitHub Stats](https://github-readme-stats.shion.dev/api?username=kanjo-elkamira-ndi&show_icons=true&theme=dark)
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=kanjo-elkamira-ndi&show_icons=true&theme=dark)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=kanjo-elkamira-ndi&layout=compact&theme=dark)
+![Top Languages](https://github-readme-stats.shion.dev/api/top-langs/?username=kanjo-elkamira-ndi&layout=compact&theme=dark)
 
 ![GitHub Streak](https://streak-stats.demolab.com?user=kanjo-elkamira-ndi&theme=dark)
 
