@@ -176,7 +176,7 @@ Tech: Python, Computer Vision, Machine Learning
 
 ![Top Languages](https://github-readme-stats.shion.dev/api/top-langs/?username=kanjo-elkamira-ndi&layout=compact&theme=dark)
 
-![GitHub Streak](https://streak-stats.demolab.com?user=kanjo-elkamira-ndi&theme=dark)
+![GitHub Streak](https://streak-stats.demolab.com?user=kanjo-elkamira-ndi&theme=dark&v=2)
 
 ---
 
