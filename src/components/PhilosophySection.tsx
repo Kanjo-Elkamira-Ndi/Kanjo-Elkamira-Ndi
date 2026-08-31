@@ -1,3 +1,5 @@
+"use client";
+
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Sparkles, Layers, TestTube, Cog, BookOpen } from "lucide-react";

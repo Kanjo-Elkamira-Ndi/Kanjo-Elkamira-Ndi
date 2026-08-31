@@ -1,3 +1,5 @@
+"use client";
+
 import { motion, useAnimationControls } from "framer-motion";
 import { ArrowDown, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";

@@ -1,3 +1,5 @@
+"use client";
+
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { GraduationCap, BookOpen, FlaskConical } from "lucide-react";

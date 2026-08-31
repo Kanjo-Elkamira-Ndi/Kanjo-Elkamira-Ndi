@@ -1,3 +1,5 @@
+"use client";
+
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import { useRef, useState } from "react";
 import { LayoutGrid, MonitorSmartphone, Server, Database, Wrench } from "lucide-react";

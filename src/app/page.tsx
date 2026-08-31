@@ -1,3 +1,5 @@
+"use client";
+
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
@@ -9,7 +11,7 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import EducationSection from "@/components/EducationSection";
 
-const Index = () => {
+export default function Page() {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -24,6 +26,4 @@ const Index = () => {
       <Footer />
     </div>
   );
-};
-
-export default Index;
+}
