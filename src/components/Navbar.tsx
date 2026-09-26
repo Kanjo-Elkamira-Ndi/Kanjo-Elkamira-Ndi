@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -35,8 +36,15 @@ const Navbar = () => {
       }`}
     >
       <div className="section-container flex items-center justify-between h-16 md:h-20">
-        <a href="#" className="text-xl font-bold tracking-tight text-foreground">
-          Alchemy<span className="gradient-text">.Codes</span>
+        <a href="#" className="flex items-center" aria-label="Alchemy.Codes home">
+          <Image
+            src="/logo-no-bg.png"
+            alt="Alchemy.Codes"
+            width={499}
+            height={500}
+            className="h-10 w-10 md:h-11 md:w-11"
+            priority
+          />
         </a>
 
         {/* Desktop nav */}
