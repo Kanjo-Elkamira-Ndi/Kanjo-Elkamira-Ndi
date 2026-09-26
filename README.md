@@ -2,7 +2,7 @@
 
 💻 **Full-Stack Software Engineer**
 
-I am a passionate software engineer with over **4 years of experience in software and web application development**, focused on building **scalable systems, intelligent applications, and high-quality software solutions**.
+I am a passionate software engineer with over **2 years of experience in software and web application development**, focused on building **scalable systems, intelligent applications, and high-quality software solutions**.
 
 My work spans **full-stack development, artificial intelligence, software quality assurance, and system design**. I enjoy solving complex problems and turning ideas into practical, real-world software solutions.
 
