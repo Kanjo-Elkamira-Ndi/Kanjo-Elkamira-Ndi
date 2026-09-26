@@ -16,12 +16,12 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Kanjo Elkamira Ndi | Software Engineer & Fullstack Developer",
   description:
-    "Portfolio of Kanjo Elkamira Ndi — Software Engineer, Full-Stack Developer, and aspiring DevSecOps Engineer building scalable systems and intelligent applications.",
+    "Portfolio of Kanjo Elkamira Ndi — Software Engineer, Full-Stack Developer,building scalable systems and intelligent applications.",
   authors: [{ name: "Kanjo Elkamira Ndi" }],
   openGraph: {
     title: "Kanjo Elkamira Ndi | Software Engineer",
     description:
-      "Building scalable systems and intelligent applications. Full-Stack Developer, QA Practitioner, aspiring DevSecOps Engineer.",
+      "Building scalable systems and intelligent applications. Full-Stack Developer, QA Practitioner",
     type: "website",
   },
   twitter: {
